@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto+Slab:300,400,700");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #222222;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+}
+body h1, body h2, body h3, body h4, body span.label {
+  font-family: "Roboto Slab", serif;
+}
+body .absolute {
+  position: absolute;
+  backface-visibility: hidden;
+  transition: opacity 1s, transform 1s, -webkit-transform 1s;
+}
+body .spt150px {
+  padding-top: 150px;
+}
+body .button {
+  position: relative;
+  cursor: pointer;
+  color: #000000;
+  font-size: 4.4rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  width: 23%;
+  height: 0;
+  padding-bottom: 11%;
+  margin: 0 auto;
+  display: block;
+}
+body .wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+body .container, body .wrapper {
+  position: relative;
+  width: 100%;
+}
+body .container .brishaw-header, body .wrapper .brishaw-header {
+  background-color: #222222;
+  width: 100%;
+  color: #ffffff;
+  height: 100px;
+  padding: 5px 0;
+}
+body .container .brishaw-header .wrapper, body .wrapper .brishaw-header .wrapper {
+  max-width: 1240px;
+  height: 100%;
+  transform: none;
+}
+body .container .floor, body .wrapper .floor {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+body .container .floor section, body .wrapper .floor section {
+  position: relative;
+  backface-visibility: hidden;
+  height: auto;
+  top: 0;
+  left: 0;
+  padding: 0;
+  width: 100%;
+}
+body .container .floor section.intro, body .wrapper .floor section.intro {
+  z-index: 1;
+  transform: skew(0, -7deg);
+  margin-top: -7%;
+  padding-top: 7%;
+}
+body .container .floor section.intro .section-bg, body .wrapper .floor section.intro .section-bg {
+  background-image: url(../images/bgc.jpg);
+  background-repeat: no-repeat;
+}
+body .container .floor section.intro .wrapper, body .wrapper .floor section.intro .wrapper {
+  transform: skew(0, 7deg);
+  overflow: hidden;
+}
+body .container .floor section.intro .wrapper::before, body .wrapper .floor section.intro .wrapper::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 80%;
+}
+body .container .floor section.intro::after, body .wrapper .floor section.intro::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 94%;
+  width: 100%;
+  height: 10%;
+  background-size: 100% 100%;
+  background-image: url(../images/page_divider.png);
+  background-repeat: no-repeat;
+}
+body .container .floor section .section-bg, body .wrapper .floor section .section-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+body .container .floor section.portfolio, body .wrapper .floor section.portfolio {
+  transform: skew(0, -3.7deg);
+  margin-top: -10%;
+  padding-bottom: 10%;
+}
+body .container .floor section.portfolio:nth-child(3n+2) .section-bg, body .wrapper .floor section.portfolio:nth-child(3n+2) .section-bg {
+  background-image: url(../images/bgb.jpg);
+  background-repeat: no-repeat;
+}
+body .container .floor section.portfolio:nth-child(3n+3) .section-bg, body .wrapper .floor section.portfolio:nth-child(3n+3) .section-bg {
+  background-image: url(../images/bgd.jpg);
+  background-repeat: no-repeat;
+}
+body .container .floor section.portfolio .section-bg, body .wrapper .floor section.portfolio .section-bg {
+  background-position: 50%;
+}
+body .container .floor section.portfolio .wrapper, body .wrapper .floor section.portfolio .wrapper {
+  transform: skew(0, 3.7deg);
+}
+body .container .floor section.portfolio .wrapper::before, body .wrapper .floor section.portfolio .wrapper::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 80%;
+}
+body .container .floor section.portfolio .wrapper img, body .wrapper .floor section.portfolio .wrapper img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  border: none;
+}
+body .container .floor section.portfolio .wrapper img.portfolio-image, body .wrapper .floor section.portfolio .wrapper img.portfolio-image {
+  width: 70%;
+  max-width: none;
+  position: absolute;
+  left: 0;
+  bottom: -9%;
+  margin-left: 35%;
+}
+body .container .floor section.portfolio .wrapper img.portfolio-image.recycled, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.recycled {
+  width: 50%;
+  bottom: -13%;
+  left: -15%;
+}
+body .container .floor section.portfolio .wrapper img.portfolio-image.pocket-pantry, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.pocket-pantry {
+  width: 50%;
+  bottom: -15%;
+  left: -10%;
+}
+body .container .floor section.portfolio .wrapper .title-arrow, body .wrapper .floor section.portfolio .wrapper .title-arrow {
+  position: absolute;
+  color: #ffffff;
+  font-size: 6.4rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-align: center;
+}
+body .container .floor section.portfolio .wrapper .title-arrow.title, body .wrapper .floor section.portfolio .wrapper .title-arrow.title {
+  width: 350px;
+  right: 0;
+  margin-right: 18%;
+  top: 7%;
+  z-index: 2;
+}
+body .container .floor section.portfolio .wrapper .title-arrow.title.recycled, body .wrapper .floor section.portfolio .wrapper .title-arrow.title.recycled {
+  width: 400px;
+}
+body .container .floor section.portfolio .wrapper .title-arrow h2, body .wrapper .floor section.portfolio .wrapper .title-arrow h2 {
+  font-size: 5.4rem;
+  line-height: 1.1;
+}
+body .container .floor section.portfolio .wrapper .title-arrow h2.name, body .wrapper .floor section.portfolio .wrapper .title-arrow h2.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  transform: translate(-50%, -50%) rotate(7deg);
+  backface-visibility: hidden;
+  width: 100%;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+body .container .floor section.portfolio .wrapper .title-arrow h2.name.alt, body .wrapper .floor section.portfolio .wrapper .title-arrow h2.name.alt {
+  transform: translate(-50%, -50%) rotate(-7deg);
+}
+body .container .floor section.portfolio .wrapper .title-arrow img, body .wrapper .floor section.portfolio .wrapper .title-arrow img {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  transform: rotate(7deg);
+}
+body .container .floor section.portfolio .wrapper .title-arrow img.alt, body .wrapper .floor section.portfolio .wrapper .title-arrow img.alt {
+  transform: rotate(-7deg);
+}
+body .container .floor section.portfolio .wrapper .controls, body .wrapper .floor section.portfolio .wrapper .controls {
+  position: absolute;
+  left: 7%;
+  top: 51%;
+  width: 23%;
+}
+body .container .floor section.portfolio .wrapper .controls .button, body .wrapper .floor section.portfolio .wrapper .controls .button {
+  position: relative;
+  transform: scale(0);
+  transition: transform 0.4s, -webkit-transform 4s;
+  width: 100%;
+  padding-bottom: 47%;
+}
+body .container .floor section.portfolio .wrapper .controls .button.btn, body .wrapper .floor section.portfolio .wrapper .controls .button.btn {
+  transition-delay: 0.4s;
+}
+body .container .floor section.portfolio .wrapper .controls .button.ani-in, body .wrapper .floor section.portfolio .wrapper .controls .button.ani-in {
+  transform: scale(1);
+}
+body .container .floor section.portfolio .wrapper .controls .button svg, body .wrapper .floor section.portfolio .wrapper .controls .button svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .container .floor section.portfolio .wrapper .controls .button svg .svg-shadow, body .wrapper .floor section.portfolio .wrapper .controls .button svg .svg-shadow {
+  fill: rgba(0, 0, 0, 0.3);
+}
+body .container .floor section.portfolio .wrapper .controls .button svg .svg-fill, body .wrapper .floor section.portfolio .wrapper .controls .button svg .svg-fill {
+  fill: #ff9900;
+  transition: fill 0.3s;
+}
+body .container .floor section.portfolio .wrapper .controls .button img.icon, body .wrapper .floor section.portfolio .wrapper .controls .button img.icon {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
+  transition: transform 0.3s cubic-bezier(0.47, 2.02, 0.31, -0.36), -webkit-transform 0.3s cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  backface-visibility: hidden;
+}
+body .container .floor section.portfolio .wrapper .controls .button span.label, body .wrapper .floor section.portfolio .wrapper .controls .button span.label {
+  top: 43%;
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%) rotate(-7deg);
+  width: 70%;
+  padding: 5%;
+  text-align: center;
+}
+body .container .floor section.portfolio.recycled, body .wrapper .floor section.portfolio.recycled {
+  padding-top: 12%;
+}
+body .container .floor section.portfolio.alt, body .wrapper .floor section.portfolio.alt {
+  transform: skew(0, 7deg);
+}
+body .container .floor section.portfolio.alt .wrapper, body .wrapper .floor section.portfolio.alt .wrapper {
+  transform: skew(0, -7deg);
+}
+body .container .floor section.portfolio.alt .wrapper img .portfolio-image, body .wrapper .floor section.portfolio.alt .wrapper img .portfolio-image {
+  margin-left: 0;
+}
+body .container .floor section.portfolio.alt .wrapper .title-arrow, body .wrapper .floor section.portfolio.alt .wrapper .title-arrow {
+  right: auto;
+  left: 0;
+  margin-left: 18%;
+  margin-right: 0;
+}
+body .container .floor section.portfolio.alt .wrapper .title-arrow h2.alt, body .wrapper .floor section.portfolio.alt .wrapper .title-arrow h2.alt {
+  transform: translate(-50%, -50%) rotate(7deg);
+}
+body .container .floor section.portfolio.alt .wrapper .title-arrow img, body .wrapper .floor section.portfolio.alt .wrapper .title-arrow img {
+  transform: scaleX(-1) rotate(-7deg);
+}
+body .container .floor section.portfolio.alt .wrapper .controls, body .wrapper .floor section.portfolio.alt .wrapper .controls {
+  left: auto;
+  right: 7%;
+}
+body .container .floor section.portfolio::after, body .wrapper .floor section.portfolio::after {
+  content: "";
+  display: block;
+  background-color: #000000;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -19px;
+}
+
+/*# sourceMappingURL=style.css.map */
