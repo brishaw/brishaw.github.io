@@ -123,12 +123,20 @@ body .container .floor section.portfolio, body .wrapper .floor section.portfolio
   margin-top: -10%;
   padding-bottom: 10%;
 }
-body .container .floor section.portfolio:nth-child(3n+2) .section-bg, body .wrapper .floor section.portfolio:nth-child(3n+2) .section-bg {
+body .container .floor section.portfolio:nth-child(4n+2) .section-bg, body .wrapper .floor section.portfolio:nth-child(4n+2) .section-bg {
   background-image: url(../images/bgb.jpg);
   background-repeat: no-repeat;
 }
-body .container .floor section.portfolio:nth-child(3n+3) .section-bg, body .wrapper .floor section.portfolio:nth-child(3n+3) .section-bg {
+body .container .floor section.portfolio:nth-child(4n+3) .section-bg, body .wrapper .floor section.portfolio:nth-child(4n+3) .section-bg {
   background-image: url(../images/bgd.jpg);
+  background-repeat: no-repeat;
+}
+body .container .floor section.portfolio:nth-child(4n+4) .section-bg, body .wrapper .floor section.portfolio:nth-child(4n+4) .section-bg {
+  background-image: url(../images/bge.jpg);
+  background-repeat: no-repeat;
+}
+body .container .floor section.portfolio:nth-child(4n+5) .section-bg, body .wrapper .floor section.portfolio:nth-child(4n+5) .section-bg {
+  background-image: url(../images/bgf.jpg);
   background-repeat: no-repeat;
 }
 body .container .floor section.portfolio .section-bg, body .wrapper .floor section.portfolio .section-bg {
@@ -163,6 +171,46 @@ body .container .floor section.portfolio .wrapper img.portfolio-image.recycled, 
   left: -15%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.pocket-pantry, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.pocket-pantry {
+  width: 50%;
+  bottom: -15%;
+  left: -10%;
+}
+body .container .floor section.portfolio .wrapper img.portfolio-image.idecide, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.idecide {
+  width: 50%;
+  bottom: -13%;
+  left: -15%;
+}
+body .container .floor section.portfolio .wrapper img.portfolio-image.benclicky, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.benclicky {
+  width: 50%;
+  bottom: -15%;
+  left: -10%;
+}
+body .container .floor section.portfolio .wrapper img.portfolio-image.eat-da-burger, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.eat-da-burger {
+  width: 50%;
+  bottom: -13%;
+  left: -15%;
+}
+body .container .floor section.portfolio .wrapper img.portfolio-image.crystal-collector, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.crystal-collector {
+  width: 50%;
+  bottom: -15%;
+  left: -10%;
+}
+body .container .floor section.portfolio .wrapper img.portfolio-image.giftastic, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.giftastic {
+  width: 50%;
+  bottom: -13%;
+  left: -15%;
+}
+body .container .floor section.portfolio .wrapper img.portfolio-image.hangman, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.hangman {
+  width: 50%;
+  bottom: -15%;
+  left: -10%;
+}
+body .container .floor section.portfolio .wrapper img.portfolio-image.friend-finder, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.friend-finder {
+  width: 50%;
+  bottom: -13%;
+  left: -15%;
+}
+body .container .floor section.portfolio .wrapper img.portfolio-image.nightout, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.nightout {
   width: 50%;
   bottom: -15%;
   left: -10%;
