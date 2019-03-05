@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto+Slab:300,400,700');
 
 
-// * {
-//   padding: 0;
-//   margin: 0;
-//   border: 0;
-//   outline: none;
-//   box-sizing: border-box;
-// }
-
-// html {
-//   font-size: 62.5%;
-// }
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
 
 body {
   background: #222222;
@@ -67,7 +62,8 @@ body {
       position: absolute;
       left: 5%;
       top: 50%;
-      transform: translateY(-50%);
+      // transform: translateY(-50%);
+      @include prefix(transform, translateY(-50%), webkit ms);
       width: 30%;
       transition: transform .3s cubic-bezier(.47,2.02,.31,-.36),-webkit-transform .3s cubic-bezier(.47,2.02,.31,-.36);
       backface-visibility: hidden;
@@ -77,7 +73,8 @@ body {
       position: absolute;
       right: 0;
       top: 50%;
-      transform: translateY(-50%);
+      // transform: translateY(-50%);
+      @include prefix(transform, translateY(-50%), webkit ms);
       width: 70%;
       padding: 5%;
       text-align: center;
@@ -124,7 +121,8 @@ body {
 
         &.intro {
           z-index: 1;
-          transform: skew(0, -7deg);
+          // transform: skew(0, -7deg);
+          @include prefix(transform, skew(0, -7deg), webkit ms);
           margin-top: -7%;
           padding-top: 7%;
 
@@ -134,7 +132,8 @@ body {
           }
 
           .wrapper {
-            transform: skew(0, 7deg);
+            // transform: skew(0, 7deg);
+            @include prefix(transform, skew(0, 7deg), webkit ms);
             overflow: hidden;
 
             &::before {
@@ -326,6 +325,7 @@ body {
 
               h2 {
                 font-size: 5.4rem;
+                font-weight: 700;
                 line-height: 1.1;
 
                 &.name {
@@ -355,7 +355,14 @@ body {
                   transform: rotate(-7deg);
                 }
               }
-            } // title element 
+
+              span {
+
+                &.ntt {
+                  text-transform: none;
+                }
+              }
+            } // title-arrow
             
             .controls {
               position: absolute;
@@ -397,10 +404,11 @@ body {
                     top: 43%;
                     position: absolute;
                     right: 0;
-                    transform: translateY(-50%) rotate(-7deg);
+                    transform: translateY(-50%) rotate(-3deg);
                     width: 70%;
                     padding: 5%;
                     text-align: center;
+                    font-weight: 700;
                   }
                 }
               }
@@ -487,8 +495,13 @@ body {
         }
 
         .label {
-          transform: translateY(-50%);
+          transform: translateY(-50%) rotate(-3deg);
           width: 77%;
+          font-weight: 700;
+          font-size: 1.7rem;
+          right: auto;
+          left: 13%;
+          padding-bottom: 7%;
         }
       }
     } // a
@@ -519,6 +532,27 @@ body {
         .about-me {
           margin-bottom: 10px;
         }
+
+        .social-me {
+          display: flex;
+          flex-direction: row;
+
+          a {
+
+            img {
+
+              &.github {
+                width: 32px;
+                height: 32px;
+              }
+
+              &.linkedin {
+                width: 37px;
+                height: 37px;
+              }
+            }
+          }
+        }
       } // copy
 
       .text {
@@ -543,11 +577,12 @@ body {
             position: absolute;
             right: 0;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-50%) rotate(-2deg);
             width: 76%;
-            padding: 5%;
-            font-size: 2.7rem;
+            padding: 3% 2% 2% 2%;
+            font-size: 2rem;
             line-height: 1.1;
+            font-weight: 700;
             text-transform: uppercase;
             color: #000000;      
           }

@@ -113,6 +113,7 @@ iframe {
 }
 
 video {
+  filter: brightness(108.5%);
   -webkit-filter: brightness(108.5%);
 }
 

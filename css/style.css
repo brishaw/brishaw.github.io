@@ -47,6 +47,8 @@ body .button .icon {
   position: absolute;
   left: 5%;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 30%;
   transition: transform 0.3s cubic-bezier(0.47, 2.02, 0.31, -0.36), -webkit-transform 0.3s cubic-bezier(0.47, 2.02, 0.31, -0.36);
@@ -56,6 +58,8 @@ body .button .label {
   position: absolute;
   right: 0;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 70%;
   padding: 5%;
@@ -98,6 +102,8 @@ body .container .floor section, body .wrapper .floor section {
 }
 body .container .floor section.intro, body .wrapper .floor section.intro {
   z-index: 1;
+  -webkit-transform: skew(0, -7deg);
+  -ms-transform: skew(0, -7deg);
   transform: skew(0, -7deg);
   margin-top: -7%;
   padding-top: 7%;
@@ -107,6 +113,8 @@ body .container .floor section.intro .section-bg, body .wrapper .floor section.i
   background-repeat: no-repeat;
 }
 body .container .floor section.intro .wrapper, body .wrapper .floor section.intro .wrapper {
+  -webkit-transform: skew(0, 7deg);
+  -ms-transform: skew(0, 7deg);
   transform: skew(0, 7deg);
   overflow: hidden;
 }
@@ -261,6 +269,7 @@ body .container .floor section.portfolio .wrapper .title-arrow.title.recycled, b
 }
 body .container .floor section.portfolio .wrapper .title-arrow h2, body .wrapper .floor section.portfolio .wrapper .title-arrow h2 {
   font-size: 5.4rem;
+  font-weight: 700;
   line-height: 1.1;
 }
 body .container .floor section.portfolio .wrapper .title-arrow h2.name, body .wrapper .floor section.portfolio .wrapper .title-arrow h2.name {
@@ -285,6 +294,9 @@ body .container .floor section.portfolio .wrapper .title-arrow img, body .wrappe
 }
 body .container .floor section.portfolio .wrapper .title-arrow img.alt, body .wrapper .floor section.portfolio .wrapper .title-arrow img.alt {
   transform: rotate(-7deg);
+}
+body .container .floor section.portfolio .wrapper .title-arrow span.ntt, body .wrapper .floor section.portfolio .wrapper .title-arrow span.ntt {
+  text-transform: none;
 }
 body .container .floor section.portfolio .wrapper .controls, body .wrapper .floor section.portfolio .wrapper .controls {
   position: absolute;
@@ -318,10 +330,11 @@ body .container .floor section.portfolio .wrapper .controls .button span.label, 
   top: 43%;
   position: absolute;
   right: 0;
-  transform: translateY(-50%) rotate(-7deg);
+  transform: translateY(-50%) rotate(-3deg);
   width: 70%;
   padding: 5%;
   text-align: center;
+  font-weight: 700;
 }
 body .container .floor section.portfolio.recycled, body .wrapper .floor section.portfolio.recycled {
   padding-top: 12%;
@@ -379,8 +392,13 @@ body .container a.btt .icon, body .wrapper a.btt .icon {
   top: 55%;
 }
 body .container a.btt .label, body .wrapper a.btt .label {
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(-3deg);
   width: 77%;
+  font-weight: 700;
+  font-size: 1.7rem;
+  right: auto;
+  left: 13%;
+  padding-bottom: 7%;
 }
 body .container footer, body .wrapper footer {
   position: relative;
@@ -406,6 +424,18 @@ body .container footer .copy .about-me, body .container footer .copy .social-me,
 body .container footer .copy .about-me, body .wrapper footer .copy .about-me {
   margin-bottom: 10px;
 }
+body .container footer .copy .social-me, body .wrapper footer .copy .social-me {
+  display: flex;
+  flex-direction: row;
+}
+body .container footer .copy .social-me a img.github, body .wrapper footer .copy .social-me a img.github {
+  width: 32px;
+  height: 32px;
+}
+body .container footer .copy .social-me a img.linkedin, body .wrapper footer .copy .social-me a img.linkedin {
+  width: 37px;
+  height: 37px;
+}
 body .container footer .text, body .wrapper footer .text {
   width: 50%;
   padding-left: 10px;
@@ -424,11 +454,12 @@ body .container footer .text span.label, body .wrapper footer .text span.label {
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(-2deg);
   width: 76%;
-  padding: 5%;
-  font-size: 2.7rem;
+  padding: 3% 2% 2% 2%;
+  font-size: 2rem;
   line-height: 1.1;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
