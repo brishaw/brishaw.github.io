@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto+Slab:300,400,700");
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: none;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
 body {
   background: #222222;
   font-family: "Open Sans", sans-serif;
@@ -39,6 +27,39 @@ body .button {
   padding-bottom: 11%;
   margin: 0 auto;
   display: block;
+}
+body .button svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body .button svg .svg-shadow {
+  fill: rgba(0, 0, 0, 0.3);
+}
+body .button svg .svg-fill {
+  fill: #ff9900;
+  transition: fill 0.3s;
+}
+body .button .icon {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30%;
+  transition: transform 0.3s cubic-bezier(0.47, 2.02, 0.31, -0.36), -webkit-transform 0.3s cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  backface-visibility: hidden;
+}
+body .button .label {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70%;
+  padding: 5%;
+  text-align: center;
 }
 body .wrapper {
   max-width: 1100px;
@@ -215,6 +236,11 @@ body .container .floor section.portfolio .wrapper img.portfolio-image.nightout, 
   bottom: -15%;
   left: -10%;
 }
+body .container .floor section.portfolio .wrapper img.portfolio-image.train-time, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.train-time {
+  width: 50%;
+  bottom: -13%;
+  left: -15%;
+}
 body .container .floor section.portfolio .wrapper .title-arrow, body .wrapper .floor section.portfolio .wrapper .title-arrow {
   position: absolute;
   color: #ffffff;
@@ -279,21 +305,6 @@ body .container .floor section.portfolio .wrapper .controls .button.btn, body .w
 body .container .floor section.portfolio .wrapper .controls .button.ani-in, body .wrapper .floor section.portfolio .wrapper .controls .button.ani-in {
   transform: scale(1);
 }
-body .container .floor section.portfolio .wrapper .controls .button svg, body .wrapper .floor section.portfolio .wrapper .controls .button svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-body .container .floor section.portfolio .wrapper .controls .button svg .svg-shadow, body .wrapper .floor section.portfolio .wrapper .controls .button svg .svg-shadow {
-  fill: rgba(0, 0, 0, 0.3);
-}
-body .container .floor section.portfolio .wrapper .controls .button svg .svg-fill, body .wrapper .floor section.portfolio .wrapper .controls .button svg .svg-fill {
-  fill: #ff9900;
-  transition: fill 0.3s;
-}
 body .container .floor section.portfolio .wrapper .controls .button img.icon, body .wrapper .floor section.portfolio .wrapper .controls .button img.icon {
   position: absolute;
   left: 5%;
@@ -349,6 +360,72 @@ body .container .floor section.portfolio::after, body .wrapper .floor section.po
   position: absolute;
   bottom: 100%;
   margin-bottom: -19px;
+}
+body .container a.btt, body .wrapper a.btt {
+  font-size: 2.8rem;
+  line-height: 1.1;
+  width: 300px;
+  padding-bottom: 71px;
+  margin: 20px auto;
+}
+body .container a.btt .icon, body .wrapper a.btt .icon {
+  width: 23%;
+  left: 9%;
+  top: 55%;
+}
+body .container a.btt .label, body .wrapper a.btt .label {
+  transform: translateY(-50%);
+  width: 77%;
+}
+body .container footer, body .wrapper footer {
+  position: relative;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px 20px 20px;
+  font-size: 1rem;
+  line-height: 1.1;
+  z-index: 4;
+}
+body .container footer .copy, body .container footer .text, body .wrapper footer .copy, body .wrapper footer .text {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+body .container footer .copy, body .wrapper footer .copy {
+  width: 45%;
+}
+body .container footer .copy .about-me, body .container footer .copy .social-me, body .wrapper footer .copy .about-me, body .wrapper footer .copy .social-me {
+  width: 100%;
+}
+body .container footer .copy .about-me, body .wrapper footer .copy .about-me {
+  margin-bottom: 10px;
+}
+body .container footer .text, body .wrapper footer .text {
+  width: 55%;
+  padding-left: 10px;
+  text-align: right;
+}
+body .container footer .text svg, body .wrapper footer .text svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20%;
+  margin-left: 6%;
+}
+body .container footer .text svg .svg-fill, body .wrapper footer .text svg .svg-fill {
+  fill: #ff9900;
+}
+body .container footer .text span.label, body .wrapper footer .text span.label {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 76%;
+  padding: 5%;
+  font-size: 2.7rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
