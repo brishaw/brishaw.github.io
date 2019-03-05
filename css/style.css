@@ -187,58 +187,58 @@ body .container .floor section.portfolio .wrapper img.portfolio-image, body .wra
   margin-left: 35%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.recycled, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.recycled {
-  width: 50%;
-  bottom: -13%;
+  width: 57%;
+  bottom: -5%;
   left: -15%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.pocket-pantry, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.pocket-pantry {
-  width: 50%;
-  bottom: -15%;
+  width: 57%;
+  bottom: -3%;
   left: -10%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.idecide, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.idecide {
-  width: 50%;
-  bottom: -13%;
+  width: 57%;
+  bottom: -5%;
   left: -15%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.benclicky, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.benclicky {
-  width: 50%;
-  bottom: -15%;
+  width: 57%;
+  bottom: -2%;
   left: -10%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.eat-da-burger, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.eat-da-burger {
-  width: 50%;
-  bottom: -13%;
+  width: 57%;
+  bottom: -5%;
   left: -15%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.crystal-collector, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.crystal-collector {
-  width: 50%;
-  bottom: -15%;
+  width: 57%;
+  bottom: -2%;
   left: -10%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.giftastic, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.giftastic {
-  width: 50%;
-  bottom: -13%;
+  width: 57%;
+  bottom: -5%;
   left: -15%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.hangman, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.hangman {
-  width: 50%;
-  bottom: -15%;
+  width: 57%;
+  bottom: -5%;
   left: -10%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.friend-finder, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.friend-finder {
-  width: 50%;
-  bottom: -13%;
+  width: 57%;
+  bottom: -3%;
   left: -15%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.nightout, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.nightout {
-  width: 50%;
-  bottom: -15%;
+  width: 57%;
+  bottom: -3%;
   left: -10%;
 }
 body .container .floor section.portfolio .wrapper img.portfolio-image.train-time, body .wrapper .floor section.portfolio .wrapper img.portfolio-image.train-time {
-  width: 50%;
-  bottom: -13%;
+  width: 57%;
+  bottom: -5%;
   left: -15%;
 }
 body .container .floor section.portfolio .wrapper .title-arrow, body .wrapper .floor section.portfolio .wrapper .title-arrow {
@@ -351,6 +351,11 @@ body .container .floor section.portfolio.alt .wrapper .controls, body .wrapper .
   left: auto;
   right: 7%;
 }
+body .container .floor section.portfolio.portfolio-end, body .wrapper .floor section.portfolio.portfolio-end {
+  background-color: #222222;
+  padding-bottom: 17%;
+  margin-bottom: -7%;
+}
 body .container .floor section.portfolio::after, body .wrapper .floor section.portfolio::after {
   content: "";
   display: block;
@@ -402,7 +407,7 @@ body .container footer .copy .about-me, body .wrapper footer .copy .about-me {
   margin-bottom: 10px;
 }
 body .container footer .text, body .wrapper footer .text {
-  width: 55%;
+  width: 50%;
   padding-left: 10px;
   text-align: right;
 }

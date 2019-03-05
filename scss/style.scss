@@ -237,68 +237,68 @@ body {
                 margin-left: 35%;
 
                 &.recycled {
-                  width: 50%;
-                  bottom: -13%;
+                  width: 57%;
+                  bottom: -5%;
                   left: -15%;
                 }
 
                 &.pocket-pantry {
-                  width: 50%;
-                  bottom: -15%;
+                  width: 57%;
+                  bottom: -3%;
                   left: -10%;
                 }
 
                 &.idecide {
-                  width: 50%;
-                  bottom: -13%;
+                  width: 57%;
+                  bottom: -5%;
                   left: -15%;
                 }
 
                 &.benclicky {
-                  width: 50%;
-                  bottom: -15%;
+                  width: 57%;
+                  bottom: -2%;
                   left: -10%;
                 }
 
                 &.eat-da-burger {
-                  width: 50%;
-                  bottom: -13%;
+                  width: 57%;
+                  bottom: -5%;
                   left: -15%;
                 }
 
                 &.crystal-collector {
-                  width: 50%;
-                  bottom: -15%;
+                  width: 57%;
+                  bottom: -2%;
                   left: -10%;
                 }
 
                 &.giftastic {
-                  width: 50%;
-                  bottom: -13%;
+                  width: 57%;
+                  bottom: -5%;
                   left: -15%;
                 }
 
                 &.hangman {
-                  width: 50%;
-                  bottom: -15%;
+                  width: 57%;
+                  bottom: -5%;
                   left: -10%;
                 }
 
                 &.friend-finder {
-                  width: 50%;
-                  bottom: -13%;
+                  width: 57%;
+                  bottom: -3%;
                   left: -15%;
                 }
 
                 &.nightout {
-                  width: 50%;
-                  bottom: -15%;
+                  width: 57%;
+                  bottom: -3%;
                   left: -10%;
                 }
 
                 &.train-time {
-                  width: 50%;
-                  bottom: -13%;
+                  width: 57%;
+                  bottom: -5%;
                   left: -15%;
                 }
               }
@@ -449,6 +449,13 @@ body {
             }
           }
 
+
+          &.portfolio-end {
+            background-color: #222222;
+            padding-bottom: 17%;
+            margin-bottom: -7%;
+          }
+
           &::after {
             content: "";
             display: block;
@@ -515,7 +522,7 @@ body {
       } // copy
 
       .text {
-        width: 55%;
+        width: 50%;
         padding-left: 10px;
         text-align: right;
 
