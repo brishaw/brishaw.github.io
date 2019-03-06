@@ -1,135 +1,56 @@
-console.log("getting here...");
+var TxtType = function (el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
 
-// welcome animation
-$('.ani-welcome .letters').each(function() {
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w|\.|\,)/g, "<span class='letter'>$&</span>"));
-});
+TxtType.prototype.tick = function () {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
 
-$('.ani-iam .letters').each(function () {
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w|\.|\,)/g, "<span class='letter'>$&</span>"));
-});
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
 
-$('.ani-desc .letters').each(function () {
-  $(this).html($(this).text().replace(/([^\x00-\x80]|\w|\.|\,)/g, "<span class='letter'>$&</span>"));
-});
+  this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-anime.timeline({loop: false})
-  .add({
-    targets: '.ani-welcome .line',
-    scaleY: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 700
-  })
-  .add({
-    targets: '.ani-welcome .line',
-    translateX: [0,$(".ani-welcome .letters").width()],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 100,
-  })
-  .add({
-    targets: '.ani-welcome .letter',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=775',
-    delay: function(el, i) {
-      return 34 * (i+1)
+  var that = this;
+  var delta = 200 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function () {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function () {
+  var elements = document.getElementsByClassName('who-am-i');
+  for (var i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-type');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtType(elements[i], JSON.parse(toRotate), period);
     }
-  })
-  .add({
-    targets: '.ani-welcome',
-    opacity: 1,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  })
-  .add({
-    targets: '.ani-welcome .line',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  })
-
- 
-  .add({
-    targets: '.ani-iam .line',
-    scaleY: [0,1],
-    opacity: [0.5,1],
-    easing: "easeOutExpo",
-    duration: 700
-  })
-  .add({
-    targets: '.ani-iam .line',
-    translateX: [0,$(".ani-iam .letters").width()],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 100,
-  })
-  .add({
-    targets: '.ani-iam .letter',
-    opacity: [0,1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=775',
-    delay: function(el, i) {
-      return 34 * (i+1)
-    }
-  })
-  .add({
-    targets: '.ani-iam',
-    opacity: 1,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  })
-  .add({
-    targets: '.ani-iam .line',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  })
-
-  
-  .add({
-    targets: '.ani-desc .line',
-    scaleY: [0, 1],
-    opacity: [0.5, 1],
-    easing: "easeOutExpo",
-    duration: 700
-  })
-  .add({
-    targets: '.ani-desc .line',
-    translateX: [0, $(".ani-desc .letters").width()],
-    easing: "easeOutExpo",
-    duration: 700,
-    delay: 100,
-  })
-  .add({
-    targets: '.ani-desc .letter',
-    opacity: [0, 1],
-    easing: "easeOutExpo",
-    duration: 600,
-    offset: '-=775',
-    delay: function (el, i) {
-      return 11 * (i + 1)
-    }
-  })
-  .add({
-    targets: '.ani-desc',
-    opacity: 1,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  })
-  .add({
-    targets: '.ani-desc .line',
-    opacity: 0,
-    duration: 1000,
-    easing: "easeOutExpo",
-    delay: 1000
-  })
-  
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".who-am-i > .wrap { border-right: 0.08em solid #fff}";
+  document.body.appendChild(css);
+};
