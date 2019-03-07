@@ -83,7 +83,7 @@ window.onclick = function (event) {
 }
 
 // ajax for info
-function ajax_get(url, callback) {
+window.onload = function ajax_get(url, callback) {
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.onreadystatechange = function () {
     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
