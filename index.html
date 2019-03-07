@@ -44,7 +44,7 @@
               <img class="alt" src="images/arrow.svg" alt="Title Arrow" />
             </div>
             <div class="controls">
-              <div class="button btn ani-in absolute">
+              <div id="recycledInfo" class="button btn ani-in absolute">
                 <svg x="0px" y="0px" width="243.9px" height="97.8px" viewBox="0 0 243.9 97.8"
                   style="enable-background:new 0 0 243.9 97.8" xml:space="preserve">
                   <g>
@@ -55,7 +55,7 @@
                 <img class="icon" src="images/info.svg" alt="Info Icon" />
                 <span class="label">Info</span>
               </div>
-              <div class="button btn ani-in absolute">
+              <a class="button btn ani-in absolute" href="https://damp-badlands-52758.herokuapp.com" target="_blank">
                 <svg x="0px" y="0px" width="243.9px" height="97.8px" viewBox="0 0 243.9 97.8"
                   style="enable-background:new 0 0 243.9 97.8" xml:space="preserve">
                   <g>
@@ -65,7 +65,7 @@
                 </svg>
                 <img class="icon" src="images/view.svg" alt="Info Icon" />
                 <span class="label">Visit</span>
-              </div>
+              </a>
             </div>
           </div>
         </section>
@@ -471,6 +471,26 @@
         </div>
       </footer>
     </div> <!-- // wrapper -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p id="id01"></p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"
