@@ -102,7 +102,7 @@ function ajax_get(url, callback) {
   xmlhttp.send();
 }
 
-ajax_get('info.json', function (data) {
+ajax_get('../info.json', function (data) {
   document.getElementById("title").innerHTML = data["title"];
 
   var html = "<h2>" + data["title"] + "</h2>";
