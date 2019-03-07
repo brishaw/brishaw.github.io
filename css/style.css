@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto+Slab:300,400,700");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #222222;
   font-family: "Open Sans", sans-serif;
@@ -97,6 +101,7 @@ body .container .brishaw-header .wrapper .header-animation h1, body .wrapper .br
   justify-content: center;
   height: auto;
   min-height: 100px;
+  font-size: 3.7rem;
 }
 body .container .brishaw-header .wrapper .header-animation h1.who-am-i .wrap, body .wrapper .brishaw-header .wrapper .header-animation h1.who-am-i .wrap {
   border-color: #5D84BB;
@@ -150,6 +155,17 @@ body .container .floor section.intro::after, body .wrapper .floor section.intro:
   background-size: 100% 100%;
   background-image: url(../images/page_divider.png);
   background-repeat: no-repeat;
+}
+body .container .floor section.intro .top-res, body .wrapper .floor section.intro .top-res {
+  font-size: 3.3rem;
+  position: absolute;
+  top: 47%;
+  left: 15%;
+  font-weight: 700;
+}
+body .container .floor section.intro .top-res .label, body .wrapper .floor section.intro .top-res .label {
+  top: 45%;
+  transform: translateY(-50%) rotate(-3deg);
 }
 body .container .floor section .section-bg, body .wrapper .floor section .section-bg {
   position: absolute;
@@ -421,8 +437,8 @@ body .container footer, body .wrapper footer {
   background-color: #000000;
   color: #ffffff;
   padding: 10px 20px 20px 20px;
-  font-size: 1rem;
-  line-height: 1.1;
+  font-size: 1.3rem;
+  line-height: 1.3;
   z-index: 4;
 }
 body .container footer .copy, body .container footer .text, body .wrapper footer .copy, body .wrapper footer .text {
