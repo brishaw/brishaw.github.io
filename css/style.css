@@ -94,6 +94,17 @@ body .container .brishaw-header .wrapper, body .wrapper .brishaw-header .wrapper
   max-width: 1240px;
   height: 100%;
   transform: none;
+  display: flex;
+  align-items: center;
+}
+body .container .brishaw-header .wrapper .logo, body .wrapper .brishaw-header .wrapper .logo {
+  background-image: url("../images/logo.svg");
+  background-repeat: no-repeat;
+  width: 315px;
+  height: 77px;
+}
+body .container .brishaw-header .wrapper .header-animation, body .wrapper .brishaw-header .wrapper .header-animation {
+  padding-left: 30%;
 }
 body .container .brishaw-header .wrapper .header-animation h1, body .wrapper .brishaw-header .wrapper .header-animation h1 {
   display: flex;
@@ -101,10 +112,12 @@ body .container .brishaw-header .wrapper .header-animation h1, body .wrapper .br
   justify-content: center;
   height: auto;
   min-height: 100px;
-  font-size: 3.7rem;
+  font-size: 1.7rem;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  color: #15f750;
 }
 body .container .brishaw-header .wrapper .header-animation h1.who-am-i .wrap, body .wrapper .brishaw-header .wrapper .header-animation h1.who-am-i .wrap {
-  border-color: #5D84BB;
+  border-color: #15f750;
 }
 body .container .floor, body .wrapper .floor {
   position: relative;
@@ -454,6 +467,7 @@ body .container footer .copy .about-me, body .container footer .copy .social-me,
 }
 body .container footer .copy .about-me, body .wrapper footer .copy .about-me {
   margin-bottom: 10px;
+  padding: 10px 0;
 }
 body .container footer .copy .social-me, body .wrapper footer .copy .social-me {
   display: flex;
@@ -495,6 +509,73 @@ body .container footer .text span.label, body .wrapper footer .text span.label {
   color: #000000;
 }
 
+@media only screen and (max-width: 1080px) {
+  .floor section.intro .top-res .label {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 980px) {
+  body .container .header-animation {
+    display: none;
+  }
+  body .container .floor section.intro .top-res .label {
+    font-size: 2.5rem;
+  }
+  body .container .floor section.portfolio .wrapper .controls .button span.label {
+    font-size: 3.5rem;
+  }
+}
+@media only screen and (max-width: 790px) {
+  body .container .header-animation {
+    display: none;
+  }
+  body .container .floor section.intro .top-res .label {
+    font-size: 2rem;
+  }
+  body .container .floor section.portfolio .wrapper .controls .button span.label {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (max-width: 640px) {
+  body .container .header-animation {
+    display: none;
+  }
+  body .container .floor section.intro .top-res .label {
+    font-size: 1.5rem;
+  }
+  body .container .floor section.portfolio .wrapper .controls .button span.label {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .container .header-animation {
+    display: none;
+  }
+  body .container .floor section.intro .top-res .label {
+    font-size: 1.2rem;
+  }
+  body .container .floor section.portfolio .wrapper .controls .button span.label {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (min-width: 981px) {
+  body .container .brishaw-header .wrapper .header-animation {
+    padding-left: 14%;
+    transition: 100ms ease all;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  body .container .brishaw-header .wrapper .header-animation {
+    padding-left: 20%;
+    transition: 100ms ease all;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  body .container .brishaw-header .wrapper .header-animation {
+    padding-left: 30%;
+    transition: 100ms ease all;
+  }
+}
 /* The Modal (background) */
 .modal {
   display: none;

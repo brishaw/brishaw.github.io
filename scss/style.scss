@@ -118,20 +118,33 @@ body {
         max-width: 1240px;
         height: 100%;
         transform: none;
+        display: flex;
+        align-items: center;
+
+        .logo {
+          background-image: url("../images/logo.svg");
+          background-repeat: no-repeat;
+          width: 315px;
+          height: 77px;
+        }
 
         .header-animation {
+          padding-left: 30%;
+
           h1 {
             display: flex;
             align-items: center;
             justify-content: center;
             height: auto;
             min-height: 100px;
-            font-size: 3.7rem;
+            font-size: 1.7rem;
+            font-family: Menlo, Monaco, 'Courier New', monospace;
+            color: #15f750;
 
             &.who-am-i {
               
               .wrap {
-                border-color: #5D84BB;
+                border-color: #15f750;
               }
             }
           }
@@ -578,6 +591,7 @@ body {
 
         .about-me {
           margin-bottom: 10px;
+          padding: 10px 0;
         }
 
         .social-me {
@@ -638,6 +652,233 @@ body {
     } // footer
   } // container
 } // body
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1080px) {
+  .floor {
+    section.intro {
+      .top-res {
+        .label {
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 980px) {
+  
+  body {
+    .container {
+      .header-animation {
+        display: none;
+      }
+      .floor {
+        section {
+          &.intro {
+            .top-res {
+              .label {
+                font-size: 2.5rem;
+              }
+            }
+          }
+          &.portfolio {
+            .wrapper {
+              .controls {
+                .button {
+                  span {
+                    &.label {
+                      font-size: 3.5rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 790px) {
+  body {
+    .container {
+      .header-animation {
+        display: none;
+      }
+      .floor {
+        section {
+          &.intro {
+            .top-res {
+              .label {
+                font-size: 2rem;
+              }
+            }
+          }
+          &.portfolio {
+            .wrapper {
+              .controls {
+                .button {
+                  span {
+                    &.label {
+                      font-size: 3.2rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    .container {
+      .header-animation {
+        display: none;
+      }
+      .floor {
+        section {
+          &.intro {
+            .top-res {
+              .label {
+                font-size: 1.5rem;
+              }
+            }
+          }
+          &.portfolio {
+            .wrapper {
+              .controls {
+                .button {
+                  span {
+                    &.label {
+                      font-size: 2.3rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    .container {
+      .header-animation {
+        display: none;
+      }
+      .floor {
+        section {
+          &.intro {
+            .top-res {
+              .label {
+                font-size: 1.2rem;
+              }
+            }
+          }
+          &.portfolio {
+            .wrapper {
+              .controls {
+                .button {
+                  span {
+                    &.label {
+                      font-size: 1.7rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
+@media only screen and (min-width: 981px) {
+  
+  body {
+    .container {
+      .brishaw-header {
+        .wrapper {
+          .header-animation {
+            padding-left: 14%;
+            transition: 100ms ease all;
+          }
+        }
+      }
+    }
+  }
+ 
+}
+
+
+@media only screen and (min-width: 1080px) {
+  
+  body {
+    .container {
+      .brishaw-header {
+        .wrapper {
+          .header-animation {
+            padding-left: 20%;
+            transition: 100ms ease all;
+          }
+        }
+      } // brishaw-header
+    }
+  }
+ 
+}
+
+
+@media only screen and (min-width: 1280px) {
+  
+  body {
+    .container {
+      .brishaw-header {
+        .wrapper {
+          .header-animation {
+            padding-left: 30%;
+            transition: 100ms ease all;
+          }
+        }
+      }
+    }
+  }
+ 
+}
+
+
+
+
+
 
 /* The Modal (background) */
 .modal {
